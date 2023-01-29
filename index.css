@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    position:relative;
+}
+/* ############## html elements styling ############ */
+ul li{
+    list-style: none;
+    /* letter-spacing: .15em; */
+}
+a{
+    text-decoration: none;
+    /* color:white; */
+    font-size: 1.6rem;
+    
+}
+p,li{
+    letter-spacing: .15em;
+    font-size:1.6rem;
+}
+h1,h2,h3{
+    letter-spacing: .08em;
+
+}
+/* ############## utility classes############# */
+.letter-spacing{
+    letter-spacing: .15em;
+}
+.yellow{
+    /* color:#f7d794; */
+    /* color:#b8e994; */
+    /* color:white; */
+    /* color:#e55039; */
+    color:#f6b93b;
+}
+.dark-bg{
+    background:#2f3640;
+}
+.white{
+    color:white;
+}
+.black{
+    color:#2f3640;
+}
+.lg-heading{
+    font-size:6.2rem;
+}
+.md-heading{
+    font-size:4.2rem;
+}
+.normal-heading{
+    font-size:1.6rem;
+}
+.light-text{
+    font-weight:300;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.normal-text{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+.bold-text{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:700;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+/* ############## nav bar styling begin ################# */
+.nav-bar{
+    /* border:2px solid blue; */
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:27px 0;
+    opacity:.99;
+    position:fixed;
+    top:0;
+    /* opacity:0; */
+
+    
+}
+.nav-bar .nav-items{
+    /* background-color: red; */
+    display: flex;
+    width:28%;
+    /* width:50%; */
+}
+.nav-bar li{
+    margin:0 18px;
+}
+.nav-bar .logo{
+    /* background-color: orange; */
+    /* border:2px solid red; */
+    width:22%;
+    height:65px;
+    text-align: center;
+    font-size:2.6rem;
+    overflow: hidden;
+    
+    /* animation-fill-mode: forwards; */
+    /* -o-animation-delay: 1s; */
+    /* border-right:2px solid white; */
+
+
+
+}
+#father{
+    /* border:2px solid green; */
+    width:65%;
+    text-align: left;
+    display:block;
+    position:relative;
+    animation-name: slider;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+@keyframes slider{
+   0%{
+    top:0px;
+    left:0;
+   }25%{
+    top:0;
+    left:150px;
+   }50%{
+    top:37px;
+    left:150px;
+   }75%{
+    top:37px;
+    left:0px;
+   }100%{
+    left:0px;
+    top:0px;
+   }
+}
+.nav-bar .box1{
+    /* background-color: pink; */
+    width:28%;
+    position:relative;
+}
+.nav-bar input{
+    padding:12px 10px;
+    border-radius: 25px;
+    border:3px solid #f6b93b; 
+    outline: none;
+    width:70%;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: .15em;
+    
+}
+.nav-bar a{
+    transition: all .2s ease-in-out;
+}
+
+.nav-bar a:hover{
+    color:orange;
+}
+::placeholder{
+    letter-spacing: 1px;
+    color:#2f3640;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* color:white; */
+    text-transform: capitalize;
+}
+.nav-bar i{
+    position: absolute;
+    font-size: 2.4rem;
+    top: 10px;
+    right: 162px;
+}
+/* ################ main heading ########### */
+.main-heading{
+    /* border:2px solid red; */
+    width:60%;
+    /* margin-top:75px; */
+    margin-top: 13.9rem;
+    padding: 8.4rem 6.8rem;
+}
+
+.main-heading .heading{
+    /* border:2px solid green; */
+    line-height: 7.2rem;
+    width:80%;
+}
+.main-heading .para{
+    margin:1.5rem 0;
+    line-height: 3.2rem;
+}
+/* line-height: 3.2rem; */
+.main-heading .btn{
+    display: inline-block;
+    border:none;
+    outline:none;
+    background-color: #f6b93b;
+    color:#2f3640;
+    /* color:white; */
+    padding:1.6rem 2.6rem;
+    margin-right:2.5rem;
+    font-size: 1.6rem;
+    
+    /* margin:0 15px; */
+}
+.img-box{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 9.2rem;
+    right: 14.5rem;
+    width: 40.5rem;
+    height: 33.2rem;
+    background: url(./img/craft.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius:500px;
+    
+}
+
+
+
